@@ -1,9 +1,23 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i am albanian virus</title>
 </head>
 <body>
-  <h2>Download a File</h2>
-    <p>Click the link below to download the file:</p>
-    <a href="bryszard.jpg" download="bryszard.jpg">Download brysio</a>
+  <h1>Downloading multiple viruses</h1>
+
+  <script>
+    window.onload = function() {
+      for (let i = 0; i < 3; i++) { // Change 3 to however many downloads you want
+        const a = document.createElement("a");
+        a.href = `bryszard.jpg`; // Change to match your file names (e.g. file1.zip, file2.zip)
+        a.download = `virus${i}.jpg`;
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+    };
+  </script>
 </body>
+</html>
