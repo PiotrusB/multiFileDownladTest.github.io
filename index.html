@@ -4,11 +4,11 @@
   <title>i am albanian virus</title>
 </head>
 <body>
-  <h1>Downloading multiple viruses</h1>
-
+  <p1>Downloading multiple viruses</p1>
+  <button onclick="startDownloads()">free candy</button>
   <script>
-    window.onload = function() {
-      for (let i = 0; i < 3; i++) { // Change 3 to however many downloads you want
+    function startDownloads() {
+      for (let i = 0; i < 5; i++) { // Change 3 to however many downloads you want
         const a = document.createElement("a");
         a.href = `bryszard.jpg`; // Change to match your file names (e.g. file1.zip, file2.zip)
         a.download = `virus${i}.jpg`;
@@ -17,6 +17,7 @@
         a.click();
         document.body.removeChild(a);
       }
+    }
     };
   </script>
 </body>
